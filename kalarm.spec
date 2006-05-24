@@ -1,14 +1,9 @@
-#
-# TODO:
-# - kttsd support (bcond --without kttsd)
-#   ^^^^^ (B)Rs
-#
-Summary:	KAlarm
-Summary(de):	KAlarm
-Summary(pl):	KAlarm
+Summary:	KAlarm - A personal alarm scheduler
+Summary(de):	KAlarm - Ein persönliches Terminplanungsprogramm
+Summary(pl):	KAlarm - Osobisty program do przypominania
 Name:		kalarm
 Version:	1.4.1
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.astrojar.org.uk/linux/download/%{name}-%{version}.kde3.tar.bz2
@@ -26,15 +21,18 @@ Obsoletes:	kdepim-kalarm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KAlarm lets you configure personal messages to be displayed, commands
-to be executed, or emails to be sent, at scheduled times. It allows
-you to choose the message font and color, how often to repeat, whether
-to display an advance reminder, whether to speak the message or play a
-sound when it is displayed, and whether to cancel the alarm if it
-can't be triggered on time (e.g. if you are logged out at the time).
-As well as using the graphical interface to configure alarms, you can
-use the command line, and there is a DCOP interface for other
-applications.
+KAlarm is a personal alarm message, command and email scheduler. It
+lets you set up personal alarm messages which pop up on the screen at
+the chosen time, or you can schedule commands to be executed or emails
+to be sent. Also includes an alarm daemon.
+
+%description -l de
+KAlarm ist ein persönliches Terminplanungsprogramm das via Meldung
+oder E-Mail bescheid gibt. Es ermöglicht eigene Alarm-Nachrichten
+einzustellen die später bei der gewünschten Zeit auf dem Bildschirm
+erscheinen, oder Tätigkeiten die gemacht werden sollen sowohl wie
+E-Mails die verschickt werden sollen einzuplanen. Das Packet enthält
+auch ein Hintergrundprogramm.
 
 %description -l pl
 KAlarm to osobisty program do planowania i przypominania poprzez
