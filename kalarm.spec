@@ -66,6 +66,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 	kde_libs_htmldir=%{_kdedocdir} \
 	kdelnkdir=%{_desktopdir} \
 
+rm -r $RPM_BUILD_ROOT%{_datadir}/applnk/Applications
 %find_lang %{name} --with-kde
 
 %clean
@@ -73,11 +74,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING INSTALL README README.libical
+%doc ACKNOWLEDGEMENTS AUTHORS Changelog README README.libical
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/kalarm.desktop
 %{_datadir}/applnk/.hidden/kalarmd.desktop
-%{_datadir}/applnk/Applications/kalarm.desktop
 %{_datadir}/apps/kalarm*
 %{_iconsdir}/crystalsvg/16x16/apps/%{name}.png
 %{_iconsdir}/crystalsvg/32x32/apps/%{name}.png
