@@ -8,6 +8,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://www.astrojar.org.uk/linux/download/%{name}-%{version}.kde3.tar.bz2
 # Source0-md5:	512b145f94f70bab25228e19148300bc
+Patch0:		kde-ac260-lt.patch
 URL:		http://www.kde-apps.org/content/show.php?content=9966
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -40,6 +41,7 @@ wys³ania. Zawiera tak¿e demona obs³uguj±cego przypominanie.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
