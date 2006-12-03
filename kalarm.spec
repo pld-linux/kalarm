@@ -12,10 +12,7 @@ URL:		http://www.kde-apps.org/content/show.php?content=9966
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	qt-devel >= 3.1
 BuildRequires:	rpmbuild(macros) >= 1.129
-Requires:	kdebase-core >= 3.0
-Requires:	qt >= 3.1
 Provides:	kdepim-kalarm
 Obsoletes:	kdepim-kalarm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
