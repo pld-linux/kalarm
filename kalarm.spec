@@ -12,6 +12,7 @@ Patch0:		kde-ac260-lt.patch
 URL:		http://www.kde-apps.org/content/show.php?content=9966
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	flex
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	rpmbuild(macros) >= 1.129
 Provides:	kdepim-kalarm
