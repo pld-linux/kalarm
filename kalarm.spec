@@ -1,6 +1,6 @@
 Summary:	KAlarm - A personal alarm scheduler
-Summary(de):	KAlarm - Ein persˆnliches Terminplanungsprogramm
-Summary(pl):	KAlarm - Osobisty program do przypominania
+Summary(de.UTF-8):   KAlarm - Ein pers√∂nliches Terminplanungsprogramm
+Summary(pl.UTF-8):   KAlarm - Osobisty program do przypominania
 Name:		kalarm
 Version:	1.4.8
 Release:	1
@@ -25,20 +25,20 @@ lets you set up personal alarm messages which pop up on the screen at
 the chosen time, or you can schedule commands to be executed or emails
 to be sent. Also includes an alarm daemon.
 
-%description -l de
-KAlarm ist ein persˆnliches Terminplanungsprogramm das via Meldung
-oder E-Mail bescheid gibt. Es ermˆglicht eigene Alarm-Nachrichten
-einzustellen die sp‰ter bei der gew¸nschten Zeit auf dem Bildschirm
-erscheinen, oder T‰tigkeiten die gemacht werden sollen sowohl wie
-E-Mails die verschickt werden sollen einzuplanen. Das Packet enth‰lt
+%description -l de.UTF-8
+KAlarm ist ein pers√∂nliches Terminplanungsprogramm das via Meldung
+oder E-Mail bescheid gibt. Es erm√∂glicht eigene Alarm-Nachrichten
+einzustellen die sp√§ter bei der gew√ºnschten Zeit auf dem Bildschirm
+erscheinen, oder T√§tigkeiten die gemacht werden sollen sowohl wie
+E-Mails die verschickt werden sollen einzuplanen. Das Packet enth√§lt
 auch ein Hintergrundprogramm.
 
-%description -l pl
+%description -l pl.UTF-8
 KAlarm to osobisty program do planowania i przypominania poprzez
-uruchomienie polecenia lub poczt± elektroniczn±. Umoøliwia ustawienie
-w≥asnej wiadomo∂ci alarmowej, ktÛra wyskoczy na ekranie o wybranym
-czasie albo zaszeregowanie poleceÒ do wykonania lub poczty do
-wys≥ania. Zawiera takøe demona obs≥uguj±cego przypominanie.
+uruchomienie polecenia lub pocztƒÖ elektronicznƒÖ. Umo≈ºliwia ustawienie
+w≈Çasnej wiadomo≈õci alarmowej, kt√≥ra wyskoczy na ekranie o wybranym
+czasie albo zaszeregowanie polece≈Ñ do wykonania lub poczty do
+wys≈Çania. Zawiera tak≈ºe demona obs≈ÇugujƒÖcego przypominanie.
 
 %prep
 %setup -q
