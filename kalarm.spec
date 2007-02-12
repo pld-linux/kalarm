@@ -1,6 +1,6 @@
 Summary:	KAlarm - A personal alarm scheduler
-Summary(de.UTF-8):   KAlarm - Ein persönliches Terminplanungsprogramm
-Summary(pl.UTF-8):   KAlarm - Osobisty program do przypominania
+Summary(de.UTF-8):	KAlarm - Ein persönliches Terminplanungsprogramm
+Summary(pl.UTF-8):	KAlarm - Osobisty program do przypominania
 Name:		kalarm
 Version:	1.4.8
 Release:	1
