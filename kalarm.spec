@@ -2,12 +2,12 @@ Summary:	KAlarm - A personal alarm scheduler
 Summary(de.UTF-8):	KAlarm - Ein persönliches Terminplanungsprogramm
 Summary(pl.UTF-8):	KAlarm - Osobisty program do przypominania
 Name:		kalarm
-Version:	1.4.11
+Version:	1.4.13
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.astrojar.org.uk/linux/download/%{name}-%{version}.kde3.tar.bz2
-# Source0-md5:	e17c16fab1b9f8f516de5f9f657bbb03
+# Source0-md5:	2907161bd01988347d8c4a678f62b0ae
 Patch0:		kde-ac260-lt.patch
 URL:		http://www.kde-apps.org/content/show.php?content=9966
 BuildRequires:	autoconf
