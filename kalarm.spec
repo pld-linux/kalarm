@@ -2,12 +2,12 @@ Summary:	KAlarm - A personal alarm scheduler
 Summary(de.UTF-8):	KAlarm - Ein persönliches Terminplanungsprogramm
 Summary(pl.UTF-8):	KAlarm - Osobisty program do przypominania
 Name:		kalarm
-Version:	1.5.0
+Version:	2.0.5
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.astrojar.org.uk/linux/download/%{name}-%{version}.kde3.tar.bz2
-# Source0-md5:	4a8e507ce70bbe5bdd7b87aefa419a85
+# Source0-md5:	8c5b98a155295049b37321c67f6c2a47
 Patch0:		kde-ac260-lt.patch
 URL:		http://www.kde-apps.org/content/show.php?content=9966
 BuildRequires:	autoconf
@@ -73,12 +73,20 @@ rm -r $RPM_BUILD_ROOT%{_datadir}/applnk/Applications
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
+
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ACKNOWLEDGEMENTS AUTHORS Changelog README README.libical
 %attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_libdir}/libkalarm*.so.*
+%attr(755,root,root) %{_libdir}/kde3/*.so
 %{_desktopdir}/kalarm.desktop
-%{_datadir}/applnk/.hidden/kalarmd.desktop
 %{_datadir}/apps/kalarm*
-%{_iconsdir}/crystalsvg/*x*/*/%{name}.png
+%{_datadir}/apps/kconf_update/kalarm*.upd
+%attr(755,root,root) %{_datadir}/apps/kconf_update/kalarm*.pl
+%{_datadir}/services/kresources/kalarm
+%{_datadir}/services/kresources/*.desktop
 %{_datadir}/autostart/*.desktop
+%{_iconsdir}/crystalsvg/*x*/*/%{name}.png
