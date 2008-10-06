@@ -3,7 +3,7 @@ Summary(de.UTF-8):	KAlarm - Ein persönliches Terminplanungsprogramm
 Summary(pl.UTF-8):	KAlarm - Osobisty program do przypominania
 Name:		kalarm
 Version:	2.0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.astrojar.org.uk/linux/download/%{name}-%{version}.kde3.tar.bz2
@@ -68,6 +68,8 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 	kdelnkdir=%{_desktopdir} \
 
 rm -r $RPM_BUILD_ROOT%{_datadir}/applnk/Applications
+rm -r $RPM_BUILD_ROOT%{_datadir}/locale/ven
+
 %find_lang %{name} --with-kde
 
 %clean
