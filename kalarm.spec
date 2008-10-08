@@ -68,7 +68,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 	kdelnkdir=%{_desktopdir} \
 
 rm -r $RPM_BUILD_ROOT%{_datadir}/applnk/Applications
-rm -r $RPM_BUILD_ROOT%{_datadir}/locale/ven
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/{ven,ve}
 
 %find_lang %{name} --with-kde
 
